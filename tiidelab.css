@@ -1,0 +1,228 @@
+header{
+    display: flex;
+ justify-content: space-between;
+ width: 700px;
+margin: auto;
+}
+main{
+   
+    
+    display: flex;
+    width:1100px;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.first-container{
+    background:url("images/background.jpg") no-repeat;
+   background-size:cover;
+   width:100%;
+   display:flex;
+   height: 450px;
+   color: rgb(255, 255, 255);
+   align-items: center;
+}
+.insidecontainer{
+    width:80%;
+    justify-content: space-around;
+    display:flex;
+    margin: auto;
+}
+.heading{
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading p{
+margin-top: -15px;
+}
+.mainform{
+    background:rgba(25, 26, 25 , 0.7);
+    width:35%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -3%;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+    
+}
+
+input{
+    padding:12px;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 7px;
+    border: none;
+    border-radius: 3px;
+    width: 85%;
+}
+input:focus{
+    outline:1px solid blue;
+    background: rgb(197, 245, 150);
+}
+.submit{
+    padding:10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 255, 149);
+    border: none;
+}
+h3{
+    font-size: 22px;
+}
+h6{
+    font-size: 9px;
+    margin-top: -2%;
+    
+}
+p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.second-container{
+    background: rgb(245, 245, 245);
+   width:1100px;
+   display:flex;
+   justify-content: space-between;
+   height: 220px;
+   color: rgb(255, 255, 255);
+   align-items: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.insidecontainer2{
+    width:750px;
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.title{
+    color:rgb(46, 46, 46);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+.services{
+    font-size: 12px;
+    color:rgb(116, 116, 116);
+    text-align: center;
+}
+.imgcontainer img{
+    width: 30px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+ .imgcontainer{
+    width: 50px;
+    height: 50px;
+    background:rgb(231, 231, 231); 
+    border-radius: 50px;
+    padding:10px;
+    margin-left: 70px;
+    
+}
+
+
+.third-container{
+    background:rgb(231, 231, 231);
+   width:1100px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 350px;
+   align-items: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.insidecontainer3{
+    width:900px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.profilecard{
+    display:flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    width:650px;
+    color:rgb(88, 88, 88);
+    margin-top: 20px;
+    
+}
+.profilename{
+    color:rgb(153, 153, 153);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    
+}
+.review{
+    font-size: 12px;
+    color:rgb(121, 121, 121);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.imgg1{
+    
+    height: 80px;
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.star{
+transform:scale(0.4);
+}
+h2{
+    font-size: 20px;
+}
+hr{
+    border: 0.4px solid rgb(219, 219, 219);
+    opacity: 0.7;
+}
+footer{
+    width:1100px;
+    display: flex;
+    margin: auto;
+    background: rgb(58, 58, 58);
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Copyright{
+    width:720px;
+    margin: auto;
+    color: white;
+    font-size: 10px;
+}
+@media only screen and (max-width:800px){
+    .first-container{
+        background:url("images/background.jpg") no-repeat;
+   background-size:cover;
+        height: 700px;
+    }
+ .insidecontainer {
+    
+    display:flex;
+    flex-direction: column;
+ }
+ .insidecontainer2{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    
+   
+}
+}

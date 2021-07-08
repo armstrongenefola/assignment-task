@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Home
+</title>
+<link href="tiidelab.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h5>Pro Cleaners</h5>
+     <h5>Phone: 1-800-222-0003</h5>
+    </header>
+    <main>
+        <section class="first-container">
+           <div class="insidecontainer">
+            <div class="heading">
+                <h1>Vancouver's Best <br/>Home Cleaners</h1>
+                <p>Pro cleaning is vancouvers best cleaning service. For the 
+                    <br/>quality maid service Vancouver relies on,
+                    book one of our <br/>experienced, background-checked proffesionals to have your <br/>home cleaned in no time.
+                </p>
+            </div>
+           
+               <div class="mainform">
+                       <h3>Request Info & Booking</h3>
+                    <h6>Fill this form and we will contact you as soon as we can</h6>
+                <form method="POST" name="signupform" id="signupform">
+                     <input type="text" name="name" placeholder="Your Name"  id="name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                   <input type="tel" name="telephone" id="telephone" placeholder="Your Phone" required>
+                   <input type="password" name="password" id="password" placeholder="Your password" required>
+                   <input type="password" name="confirmpassword" id="comfirmpassword" placeholder="comfirm Your password" required>
+                   <input type="submit" class="submit" name="send"   value="Request Info & Booking" onsubmit="display();">
+            </form>
+            
+        </div>
+        </section>
+        <section class="second-container">
+            <div class="insidecontainer2">
+            <div>
+                <div class="imgcontainer"> <img src="images/profile.png" alt="the pic"/></div>
+                <p class="title">Trusted Proffessionals</p>
+                <p class="services">Our proffesionals are experienced,<br/>friendly,and background-checked.</p>
+            </div>
+            <div>
+                <div class="imgcontainer"><img src="images/calender.png" alt="the pic"/></div>
+                <p class="title">Available Everyday</p>
+                <p class="services">We are available to serve you 7 days per <br/> week. we will work around your schedule</p></div>
+            <div>
+                <div class="imgcontainer"><img src="images/dolar.png" alt="the pic"/></div>
+                <p class="title">100% money-back guarantee</p>
+                <p class="services">if you are not satisfied we'll refund all of <br/> your money.it's as simple as that.</p></div>
+        </div>
+        </section>
+        <section class="third-container">
+            
+            <div class="insidecontainer3">
+                <h2>What our Clients Say</h2>
+                <div class="profilecard">
+            <div>
+                <img src="images/picture1.jpg" alt="the pic" class="imgg1"/>
+                <p class="profilename">Paulo Perra</p>
+                <hr/>
+                <p class="review">The team was fast and friendly-honestly my,<br/>house hasnt been this clean in years.</p>
+                <img src="images/star.png" alt="star" class="star"/>
+            </div>
+            <div><img src="images/picture2.jpg" alt="the pic" class="imgg1"/>
+                <p class="profilename">Anna Carolina</p>
+                <hr/>
+                <p class="review">It feels so great walking into a fresh clean,<br/>apartment everyday.this guys make my <br/>place spotless.</p>
+            <img src="images/star.png" alt="star" class="star"/>
+            </div>
+        </div>
+    </div>
+        </section>
+
+    </main>
+    <footer>
+       <p class="Copyright">&copy Copyright. All Rights Reserved.</p>
+    </footer>
+    <script type="text/javascript">
+        function display(){
+            name = document.getElementById ('name').value
+            email = document.getElementById ('email').value;
+            telephone = document.getElementById('telephone').value;
+            password = document.getElementById('password').value;
+            comfirmpassword = document.getElementById('comfirmpassword').value;
+            }
+            if (password != comfirmpassword) {
+                alert('password mismatch');
+            } else {
+                alert(name);
+            }
+        
+        </script>
+</body>
+</html>
