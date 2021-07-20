@@ -3,7 +3,15 @@
 <title>Home
 </title>
 <link href="tiidelab.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+function display(){
+    var x = document.signupform.name.value;
+    var y = document.signupform.email.value;
+    var z = document.signupform.telephone.value;
+    alert("Welcome " + x + " " + "your Email is  " + y + " " + "and your Phonenumber is  "+z);
+    }
 
+</script>
 </head>
 <body>
     <header>
@@ -14,7 +22,7 @@
         <section class="first-container">
            <div class="insidecontainer">
             <div class="heading">
-                <h1>Vancouver's Best <br/>Home Cleaner</h1>
+                <h1>Vancouver's Best <br/>Home Cleaners</h1>
                 <p>Pro cleaning is vancouvers best cleaning service. For the 
                     <br/>quality maid service Vancouver relies on,
                     book one of our <br/>experienced, background-checked proffesionals to have your <br/>home cleaned in no time.
@@ -24,13 +32,11 @@
                <div class="mainform">
                        <h3>Request Info & Booking</h3>
                     <h6>Fill this form and we will contact you as soon as we can</h6>
-                <form method="POST" name="signupform" id="signupform">
+                <form method="POST" name="signupform" id="signupform" data-netlify="true">
                      <input type="text" name="name" placeholder="Your Name"  id="name" required>
                     <input type="email" name="email" id="email" placeholder="Your Email" required>
                    <input type="tel" name="telephone" id="telephone" placeholder="Your Phone" required>
-                   <input type="password" name="password" id="password" placeholder="Your password" required>
-                   <input type="password" name="confirmpassword" id="comfirmpassword" placeholder="comfirm Your password" required>
-                   <input type="submit" class="submit" name="send"   value="Request Info & Booking" onsubmit="display();">
+                   <input type="submit" class="submit" name="send"   value="Request Info & Booking" onclick="display();">
             </form>
             
         </div>
@@ -78,20 +84,5 @@
     <footer>
        <p class="Copyright">&copy Copyright. All Rights Reserved.</p>
     </footer>
-    <script type="text/javascript">
-        function display(){
-            name = document.getElementById ('name').value
-            email = document.getElementById ('email').value;
-            telephone = document.getElementById('telephone').value;
-            password = document.getElementById('password').value;
-            comfirmpassword = document.getElementById('comfirmpassword').value;
-            }
-            if (password != comfirmpassword) {
-                alert('password mismatch');
-            } else {
-                alert(name);
-            }
-        
-        </script>
 </body>
 </html>
